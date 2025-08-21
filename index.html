@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos de Limpieza La Cumaca</title>
-    <!-- Incluye Tailwind CSS desde CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Importa los íconos de Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f7fafc;
         }
         .mobile-menu {
             display: none;
@@ -33,180 +30,167 @@
         }
     </style>
 </head>
-<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+<body class="bg-black text-yellow-400 font-sans leading-normal tracking-normal">
 
-    <!-- Cabecera y Navegación -->
-    <header class="bg-white shadow-md fixed w-full z-50">
+    <header class="bg-gray-900 shadow-md fixed w-full z-50">
         <div class="container mx-auto flex items-center justify-between p-4">
-            <!-- Logo - Con imagen de internet de Vecteezy -->
             <div class="flex-shrink-0">
                 <a href="#inicio" class="block">
-                    <div class="flex items-center space-x-2">
-                        <!-- Imagen de un icono de internet -->
-                        <img src="https://static.vecteezy.com/system/resources/previews/016/486/153/non_2x/cleaning-products-icon-free-vector.jpg" alt="Logo La Cumaca" class="w-12 h-12 rounded-full shadow-lg">
-                        <div class="flex flex-col">
-                            <span class="text-xl font-bold text-gray-800">Productos de Limpieza</span>
-                            <span class="text-sm font-light text-gray-600">La Cumaca</span>
-                        </div>
-                    </div>
+                    <div class="flex items-center">
+    <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755795846/imageedit_1_9530648970_umg657.png" alt="Logo La Cumaca" class="w-auto h-16">
+    <div class="flex flex-col ml-2">
+        <span class="text-xl font-bold text-gray-800">Productos de Limpieza</span>
+        <span class="text-sm font-light text-gray-600">La Cumaca</span>
+    </div>
+</div>
                 </a>
             </div>
 
-            <!-- Menú de navegación para desktop -->
             <nav class="hidden md:flex items-center space-x-6">
-                <a href="#inicio" class="text-lg font-semibold text-gray-700 hover:text-blue-600 transition duration-300">Inicio</a>
-                <a href="#productos" class="text-lg font-semibold text-gray-700 hover:text-blue-600 transition duration-300">Productos</a>
-                <a href="#sobre-nosotros" class="text-lg font-semibold text-gray-700 hover:text-blue-600 transition duration-300">Sobre Nosotros</a>
-                <a href="#contacto" class="text-lg font-semibold text-gray-700 hover:text-blue-600 transition duration-300">Contacto</a>
-                <!-- Botón de pedido con enlace telefónico -->
-                <a href="tel:+5804124502150" class="text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 py-2 px-4 rounded-full transition duration-300 animate-pulse">¡Haz tu Pedido!</a>
+                <a href="#inicio" class="text-lg font-semibold text-yellow-400 hover:text-white transition duration-300">Inicio</a>
+                <a href="#productos" class="text-lg font-semibold text-yellow-400 hover:text-white transition duration-300">Productos</a>
+                <a href="#sobre-nosotros" class="text-lg font-semibold text-yellow-400 hover:text-white transition duration-300">Sobre Nosotros</a>
+                <a href="#contacto" class="text-lg font-semibold text-yellow-400 hover:text-white transition duration-300">Contacto</a>
+                <a href="tel:+584124502150" class="text-lg font-semibold text-black bg-yellow-400 hover:bg-yellow-500 py-2 px-4 rounded-full transition duration-300 animate-pulse">¡Haz tu Pedido!</a>
             </nav>
 
-            <!-- Botón del menú móvil -->
             <div class="md:hidden">
-                <button id="mobile-menu-btn" class="text-gray-700 focus:outline-none">
+                <button id="mobile-menu-btn" class="text-yellow-400 focus:outline-none">
                     <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
             </div>
         </div>
-        
-        <!-- Menú desplegable para móvil -->
-        <div id="mobile-menu" class="mobile-menu md:hidden bg-white shadow-lg transition-all duration-300 ease-in-out">
+
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-gray-900 shadow-lg transition-all duration-300 ease-in-out">
             <nav class="py-4 px-6 space-y-2">
-                <a href="#inicio" class="block text-lg font-semibold text-gray-700 hover:bg-gray-200 p-2 rounded-md">Inicio</a>
-                <a href="#productos" class="block text-lg font-semibold text-gray-700 hover:bg-gray-200 p-2 rounded-md">Productos</a>
-                <a href="#sobre-nosotros" class="block text-lg font-semibold text-gray-700 hover:bg-gray-200 p-2 rounded-md">Sobre Nosotros</a>
-                <a href="#contacto" class="block text-lg font-semibold text-gray-700 hover:bg-gray-200 p-2 rounded-md">Contacto</a>
-                <!-- Botón de pedido con enlace telefónico -->
-                <a href="tel:+5804124502150" class="block text-lg font-semibold text-white bg-blue-600 hover:bg-blue-700 p-2 rounded-full text-center mt-4">¡Haz tu Pedido!</a>
+                <a href="#inicio" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Inicio</a>
+                <a href="#productos" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Productos</a>
+                <a href="#sobre-nosotros" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Sobre Nosotros</a>
+                <a href="#contacto" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Contacto</a>
+                <a href="tel:+584124502150" class="block text-lg font-semibold text-black bg-yellow-400 hover:bg-yellow-500 p-2 rounded-full text-center mt-4">¡Haz tu Pedido!</a>
             </nav>
         </div>
     </header>
 
-    <!-- Sección Principal (Hero) -->
-    <main id="inicio" class="pt-24 bg-blue-600 text-white min-h-screen flex items-center justify-center">
+    <main id="inicio" class="pt-24 bg-black text-yellow-400 min-h-screen flex flex-col items-center justify-center">
         <div class="container mx-auto p-8 text-center">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 animate-pulse">
-                Productos de Limpieza La Cumaca
-                <br>
-                <span class="text-xl sm:text-2xl md:text-3xl font-normal">¡Expertos en Limpieza para tu hogar y negocio!</span>
+            <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755793693/a1_g13_xyrv61.png" alt="Productos de Limpieza La Cumaca" class="w-auto max-w-2xl mb-4 mx-auto">
+            <h1 class="text-xl sm:text-2xl md:text-3xl font-normal mb-8 animate-pulse">
+                ¡Expertos en Limpieza para tu hogar y negocio!
             </h1>
-            <p class="text-lg sm:text-xl md:text-2xl font-light mb-8">
-                Ofrecemos productos de calidad al mayor y detal. ¡Precio Económico con la mejor limpieza!
+            <p class="text-lg sm:text-xl md:text-2xl font-light mb-5">
+                Ofrecemos productos de calidad al mayor y detal. ¡Precio Económico y cordial Atención!
             </p>
-            <a href="#productos" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300">
+            <a href="#productos" class="bg-yellow-400 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300">
                 Descubre nuestros productos
             </a>
         </div>
     </main>
 
-    <!-- Sección de Productos -->
-    <section id="productos" class="py-16 bg-white">
+    <section id="productos" class="py-16 bg-black">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-8">Nuestros Productos</h2>
-            <p class="text-lg text-gray-600 mb-12">Ofrecemos productos de limpieza de alta calidad, disponibles al mayor y detal. Perfectos para tu hogar o negocio.</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">Nuestros Productos</h2>
+            <p class="text-lg text-yellow-400 mb-12">Ofrecemos productos de limpieza de alta calidad, disponibles al mayor y detal. Perfectos para tu hogar o negocio.</p>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Tarjeta de Producto - Desinfectantes -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                     <div class="flex justify-center mb-4">
-                        <i class="fas fa-viruses text-5xl text-blue-600"></i>
+                        <i class="fas fa-viruses text-5xl text-yellow-400"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-700 mb-2">Desinfectantes</h3>
-                    <p class="text-gray-500">Elimina gérmenes y bacterias para un ambiente seguro y saludable.</p>
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Desinfectantes</h3>
+                    <p class="text-gray-400">Elimina gérmenes y bacterias para un ambiente seguro y saludable.</p>
                 </div>
-                <!-- Tarjeta de Producto - Desengrasantes -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                     <div class="flex justify-center mb-4">
-                        <i class="fas fa-spray-can text-5xl text-blue-600"></i>
+                        <i class="fas fa-spray-can text-5xl text-yellow-400"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-700 mb-2">Desengrasantes</h3>
-                    <p class="text-gray-500">Poderosa fórmula para remover la grasa más difícil de cocinas y superficies.</p>
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Desengrasantes</h3>
+                    <p class="text-gray-400">Poderosa fórmula para remover la grasa más difícil de cocinas y superficies.</p>
                 </div>
-                <!-- Tarjeta de Producto - Cloro -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+               <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+    <div class="flex justify-center mb-4">
+        <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755800965/imageedit_3_5211239831_yqqaof.png" alt="Botella de Cloro" class="w-12 h-12 text-5xl text-yellow-400">
+    </div>
+    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Cloro</h3>
+    <p class="text-gray-400">Blanqueador y desinfectante ideal para una limpieza profunda y efectiva.</p>
+</div>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
                     <div class="flex justify-center mb-4">
-                        <i class="fas fa-vial text-5xl text-blue-600"></i>
+                        <i class="fas fa-bottle-droplet text-5xl text-yellow-400"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-700 mb-2">Cloro</h3>
-                    <p class="text-gray-500">Blanqueador y desinfectante ideal para una limpieza profunda y efectiva.</p>
-                </div>
-                <!-- Tarjeta de Producto - Trato cordial y amable -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex justify-center mb-4">
-                        <i class="fas fa-bottle-droplet text-5xl text-blue-600"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-gray-700 mb-2">Articulos de Limpieza Genericos para la limpieza efectiva de tu casa!</h3>
-                    <p class="text-gray-500">Todo lo que necesitas para el cuidado de tu hogar en un solo lugar.</p>
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Artículos de Limpieza Genéricos para la limpieza efectiva de su casa y negocio!</h3>
+                    <p class="text-gray-400">Todo lo que necesitas para la limpieza en general en un solo lugar.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Sobre Nosotros -->
-    <section id="sobre-nosotros" class="py-16 bg-gray-200">
+    <section id="sobre-nosotros" class="py-16 bg-gray-900">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-8">Sobre Nosotros</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">Sobre Nosotros</h2>
             <div class="max-w-3xl mx-auto">
-                <p class="text-lg text-gray-600 mb-6">
+                <p class="text-lg text-yellow-400 mb-6">
                     Productos de Limpieza La Cumaca nació de la necesidad de ofrecer soluciones de limpieza de alta calidad y a precios accesibles para la comunidad.
                     Nuestra misión es proveer productos que te ayuden a mantener tu hogar limpio, seguro y saludable, con la comodidad de comprarlos al mayor o detal.
                 </p>
-                <p class="text-lg text-gray-600">
+                <p class="text-lg text-yellow-400">
                     Estamos comprometidos con la satisfacción del cliente y la calidad de nuestros productos.
                 </p>
+                <div class="flex justify-center mt-8">
+                   <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755795846/imageedit_1_9530648970_umg657.png" alt="Logo La Cumaca" class="w-auto h-60">
+
+
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="py-16 bg-white">
+    <section id="contacto" class="py-16 bg-black">
         <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-8">Contáctanos</h2>
-            <p class="text-lg text-gray-600 mb-8">¿Listo para hacer tu pedido o tienes alguna pregunta? Estamos aquí para Servirte.</p>
+            <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">Contáctanos</h2>
+            <p class="text-lg text-yellow-400 mb-8">¿Listo para hacer tu pedido o tienes alguna pregunta? Estamos aquí para Servirte.</p>
             <div class="max-w-2xl mx-auto space-y-6">
-                <div class="flex items-center justify-center space-x-4">
-                    <i class="fas fa-phone-alt text-2xl text-blue-600"></i>
-                    <span class="text-lg text-gray-700">+58 412 4502150</span>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="tel:+584124502150" class="inline-block bg-yellow-400 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-500 transition duration-300">
+                        📞 Llamar
+                    </a>
+                    <a href="https://wa.me/584124502150" target="_blank" class="inline-block bg-green-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+                        💬 WhatsApp
+                    </a>
                 </div>
-                <div class="flex items-center justify-center space-x-4">
-                    <i class="fas fa-envelope text-2xl text-blue-600"></i>
-                    <span class="text-lg text-gray-700">lacumaca.limpieza@email.com</span>
-                </div>
-                <div class="flex items-center justify-center space-x-4">
-                    <i class="fas fa-map-marker-alt text-2xl text-blue-600"></i>
-                    <span class="text-lg text-gray-700">Av. Principal La Cumaca, San Diego, Venezuela</span>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-center space-x-4">
+                        <i class="fas fa-envelope text-2xl text-yellow-400"></i>
+                        <span class="text-lg text-gray-400">lacumaca.limpieza@email.com</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-yellow-400"></i>
+                        <span class="text-lg text-gray-400">Av. Principal La Cumaca, San Diego, Venezuela</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Inicio de la sección de Pie de Página (Footer) -->
-    <footer class="bg-gray-800 text-gray-300 py-8">
+    <footer class="bg-gray-900 text-gray-400 py-8">
         <div class="container mx-auto px-4 text-center">
             <p class="text-lg font-bold mb-4">Productos de Limpieza La Cumaca</p>
             <p class="text-sm">¡Tu socio de confianza para un hogar y negocio limpios y saludables!</p>
             <div class="flex justify-center space-x-6 mt-6">
-                <!-- Ícono de WhatsApp -->
                 <a href="https://wa.me/584124502150" target="_blank" class="text-gray-400 hover:text-green-500 transition-colors duration-300">
                     <i class="fab fa-whatsapp text-3xl"></i>
                 </a>
-                <!-- Ícono de Instagram -->
                 <a href="#" target="_blank" class="text-gray-400 hover:text-pink-500 transition-colors duration-300">
                     <i class="fab fa-instagram text-3xl"></i>
                 </a>
-                <!-- Ícono de Facebook -->
                 <a href="#" target="_blank" class="text-gray-400 hover:text-blue-500 transition-colors duration-300">
                     <i class="fab fa-facebook-f text-3xl"></i>
                 </a>
             </div>
-            <p class="mt-8 text-xs">&copy; 2024 Productos de Limpieza La Cumaca. Todos los derechos reservados.</p>
+            <p class="mt-8 text-xs">&copy; 2024 Productos de Limpieza La Cumaca. Todos los derechos reservados.   Diseño: EBS Making</p>
         </div>
     </footer>
-    <!-- Fin de la sección de Pie de Página (Footer) -->
-
-    <!-- Script para el menú móvil -->
     <script>
         document.getElementById('mobile-menu-btn').addEventListener('click', function() {
             const menu = document.getElementById('mobile-menu');
