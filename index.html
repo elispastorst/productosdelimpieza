@@ -251,7 +251,7 @@
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('active');
         });
-    </script><script>
+    </script>
 const base_de_conocimiento = {
     "de donde es la empresa": "Emprende World no es una empresa, es una plataforma de publicidad creada en 2008, actualmente es administrado por Web Fantástica, comunidad de emprendedores cuya sede de operaciones se encuentra en Oaxaca, México.",
     "que es emprende world": "Emprende World es un acrónimo en donde se combinan dos palabras de diferente lenguaje para describir a quienes lo conforman. Su significado es: 'Emprendedores del mundo'. Emprende World es el nombre que identifica a nuestra plataforma de publicidad, la cual se constituye como el mejor medio para que cualquier emprendedor pueda obtener desarrollo económico de una manera sencilla. Nuestra plataforma está abierta a la participación de todo el mundo y en ella se pueden promover todo tipo de negocios siempre y cuando estos sean legales. La publicidad es administrada en la propia plataforma por sus propietarios.",
@@ -276,7 +276,7 @@ const base_de_conocimiento = {
 };
 
 const faqContainer = document.getElementById('faq-container');
-const faqAnswer = document.getElementById('faq-answer');
+const faqAnswerContainer = document.getElementById('faq-answer');
 
 for (const pregunta in base_de_conocimiento) {
     const boton = document.createElement('button');
@@ -285,7 +285,13 @@ for (const pregunta in base_de_conocimiento) {
 
     boton.addEventListener('click', () => {
         const respuesta = base_de_conocimiento[pregunta];
-        faqAnswer.textContent = respuesta;
+
+        // Crear un nuevo div para la respuesta
+        const nuevaRespuesta = document.createElement('div');
+        nuevaRespuesta.innerHTML = `<h3>${pregunta.charAt(0).toUpperCase() + pregunta.slice(1)}?</h3><p>${respuesta}</p>`;
+
+        // Agregar la respuesta al contenedor
+        faqAnswerContainer.appendChild(nuevaRespuesta);
     });
 
     faqContainer.appendChild(boton);
