@@ -184,7 +184,11 @@
             <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755564408/P-6_w7edxu.png" 
                  alt="Emprende World" 
                  class="w-auto max-w-sm sm:max-w-md md:max-w-lg mx-auto rounded-lg shadow-lg">
-        </div>
+        </div><h2 style="text-align:center; margin-top: 50px;">Preguntas Frecuentes</h2>
+<div id="faq-container" style="display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:20px;">
+</div>
+<div id="faq-answer" style="margin-top:20px; text-align:center; font-size:1.2em;">
+</div>
         <p class="text-lg sm:text-xl md:text-2xl font-light">
             Descubre cómo ganar dinero en línea con el marketing de afiliados y aprovecha las oportunidades para crecer.
         </p>
@@ -242,6 +246,45 @@
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('active');
         });
-    </script>
+    </script><script>
+const base_de_conocimiento = {
+    "de donde es la empresa": "Emprende World no es una empresa, es una plataforma de publicidad creada en 2008, actualmente es administrado por Web Fantástica, comunidad de emprendedores cuya sede de operaciones se encuentra en Oaxaca, México.",
+    "que es emprende world": "Emprende World es un acrónimo en donde se combinan dos palabras de diferente lenguaje para describir a quienes lo conforman. Su significado es: 'Emprendedores del mundo'. Emprende World es el nombre que identifica a nuestra plataforma de publicidad, la cual se constituye como el mejor medio para que cualquier emprendedor pueda obtener desarrollo económico de una manera sencilla. Nuestra plataforma está abierta a la participación de todo el mundo y en ella se pueden promover todo tipo de negocios siempre y cuando estos sean legales. La publicidad es administrada en la propia plataforma por sus propietarios.",
+    "cuantas personas tengo que referir para participar": "Entre más personas refiera mayores serán sus ganancias. Debe tener en cuenta que usted recibe como bonificación el 100% del importe pagado por el paquete EW-1 de cada uno de sus referidos directos, independientemente de la posición que ocupen en su red.",
+    "cuantas cuentas puedo tener": "Usted puede tener las cuentas que desee, siempre y cuando cada cuenta tenga una cuenta de correo electrónico diferente a las demás, una cuenta bancaria y una cuenta de usuario también diferentes a las demás.",
+    "soy menor de edad puedo participar": "La edad mínima para participar en el programa es de 18 años.",
+    "cuanto tiempo tengo para activar mi cuenta": "Como usuario sin pago, usted permanecerá sólo 15 días dentro de la lista de invitados de su patrocinador. Si en ese periodo no activa su cuenta será eliminado del sistema.",
+    "quiero ayuda personalizada": "Puede comunicarse con el área de soporte técnico ingresando desde la sección Ayuda > Soporte dentro de su Oficina Virtual.",
+    "cuanto cuesta la inscripcion": "En el programa no se paga inscripción. Para activar su cuenta sólo debe adquirir el primer paquete de publicidad que cuesta $2.00 dólares.",
+    "cual es el medio de pago que puedo usar": "De preferencia recomendamos utilizar USDT o USDC en todas las transacciones. Con esta moneda virtual las transacciones son de muy bajo costo o casi nulo, incluso en algunos casos los pagos se envían en forma gratuita. En la red existe un gran número de tutoriales sobre el envío de USDT o USDC, le recomendamos que los lea. Si por alguna razón usted no desea enviar sus pagos en USDT o USDC, puede utilizar LTC, ETH, BCH o BTC en su envío. Si reside en México puede hacer sus envíos en pesos mexicanos utilizando cualquier banco del Sistema Bancario Mexicano.",
+    "cuantos paquetes de publicidad manejan": "El programa tiene 7 paquetes diferentes de acuerdo al nivel de cobro de bonificaciones que usted desee tener. Independientemente de esto, se ingresa al programa realizando la compra del paquete de menor costo. El costo de cada paquete es el siguiente: EW-1 = $2.00 dólares, EW-2 = $4.00 dólares, EW-3 = $16.00 dólares, EW-4 = $32.00 dólares, EW-5 = $64.00 dólares, EW-6 = $90.00 dólares, EW-7 = $120.00 dólares.",
+    "puedo saltarme un paquete": "No. Para llevar un orden en los pagos que usted recibirá por concepto de las compras de publicidad de sus referidos es necesario conservar el orden establecido en el Plan de Compensaciones.",
+    "puedo pagar paquetes superiores con ganancias": "Sí. Usted puede hacer pagos con cargo a su saldo.",
+    "recibire todos los pagos de mi red": "No. Usted recibirá como bonificación las compras del paquete EW-1 únicamente de sus referidos directos, independientemente de la ubicación que tengan éstos en su red. Para los paquetes EW-2 a EW-7, recibirá bonificaciones solo de los usuarios ubicados en el mismo nivel que el paquete en su red.",
+    "cuanto puedo ganar": "Todo depende del esfuerzo que usted ponga en sus actividades de prospectación, en combinación con el esfuerzo de todos los que están por encima y por debajo de usted en la red general de invitados. Trabajando en equipo se obtienen los mejores resultados.",
+    "cuantas formas de ganar dinero tengo": "Emprende World ofrece dos tipos de ingresos: 1. Ingreso por concepto de cuenta activada de cada referido directo. 2. Ingreso por concepto de la adquisición de paquetes superiores de publicidad (EW-2 a EW-7) de todos los que conforman su red de invitados, la cantidad de ingresos depende de la posición que estos tengan en su red.",
+    "en que consiste el ingreso por cuenta activada": "Si usted promueve nuestro programa y gracias a esa promoción alguien activa su cuenta adquiriendo el primer paquete de publicidad, usted cobrará el 100% del importe pagado por su referido.",
+    "en que consiste el ingreso por paquetes superiores": "En nuestro programa se comercializan 7 paquetes diferentes de publicidad. La adquisición del primer paquete permite activar la cuenta del usuario. Los 6 paquetes restantes se denominan paquetes superiores o subsecuentes y el importe pagado por los usuarios en su adquisición será adjudicado a usted dependiendo de la posición que tenga el comprador en su red de invitados. Para mayores detalles consultar la sección Cómo funciona de nuestro sitio web.",
+    "cual es el monto minimo de retiro": "El monto mínimo de retiro es de $16.00 dólares.",
+    "por que no me devuelven el dinero": "Los pagos NO SON REEMBOLSABLES. Recuerde que los pagos son canalizados a la cuenta del patrocinador o del upline correspondiente, por lo tanto no podemos devolver algo que ya no tenemos.",
+    "donde veo mi publicidad": "La publicidad se muestra en cada sección de nuestro sitio en internet y en las Oficina Virtuales de nuestros usuarios."
+};
+
+const faqContainer = document.getElementById('faq-container');
+const faqAnswer = document.getElementById('faq-answer');
+
+for (const pregunta in base_de_conocimiento) {
+    const boton = document.createElement('button');
+    boton.textContent = pregunta.charAt(0).toUpperCase() + pregunta.slice(1) + '?';
+    boton.style.cssText = 'background-color:#4CAF50; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;';
+
+    boton.addEventListener('click', () => {
+        const respuesta = base_de_conocimiento[pregunta];
+        faqAnswer.textContent = respuesta;
+    });
+
+    faqContainer.appendChild(boton);
+}
+</script>
 </body>
 </html>
