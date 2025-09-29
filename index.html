@@ -1,336 +1,338 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos de Limpieza La Cumaca</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        .mobile-menu {
-            display: none;
-        }
-        .mobile-menu.active {
-            display: block;
-        }
-        /* Animación para el botón de compra */
-        @keyframes pulse {
-            0%, 100% {
-                transform: scale(1);
-            }
-            50% {
-                transform: scale(1.05);
-            }
-        }
-        .animate-pulse {
-            animation: pulse 2s infinite;
-        }
-        /* Estilos específicos para la sección de FAQ */
-        .faq-button {
-            background-color: #fcd34d; /* yellow-400 */
-            color: #000000; /* black */
-            font-weight: bold;
-            padding: 1rem 2rem;
-            border-radius: 9999px; /* full rounded */
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition-property: all;
-            transition-duration: 300ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-            transform: scale(1);
-        }
-        .faq-button:hover {
-            background-color: #fde047; /* yellow-300 */
-            transform: scale(1.05);
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos de Limpieza La Cumaca</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .mobile-menu {
+            display: none;
+        }
+        .mobile-menu.active {
+            display: block;
+        }
+        /* Animación para el botón de compra */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        .animate-pulse {
+            animation: pulse 2s infinite;
+        }
+        /* Estilos específicos para la sección de FAQ */
+        .faq-button {
+            background-color: #fcd34d; /* yellow-400 */
+            color: #000000; /* black */
+            font-weight: bold;
+            padding: 1rem 2rem;
+            border-radius: 9999px; /* full rounded */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition-property: all;
+            transition-duration: 300ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transform: scale(1);
+        }
+        .faq-button:hover {
+            background-color: #fde047; /* yellow-300 */
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body class="bg-black text-yellow-400 font-sans leading-normal tracking-normal">
 
-    <header class="bg-gray-900 text-yellow-400 py-4 px-6 fixed top-0 left-0 right-0 z-50 shadow-lg">
-        <div class="container mx-auto flex justify-between items-center">
-            <a href="#inicio" class="flex items-center space-x-2">
-                <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755795846/imageedit_1_9530648970_umg657.png" alt="Logo" class="w-10 h-10 rounded-full">
-                <span class="text-xl sm:text-2xl font-bold">La Cumaca</span>
-            </a>
+    <header class="bg-gray-900 text-yellow-400 py-4 px-6 fixed top-0 left-0 right-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#inicio" class="flex items-center space-x-2">
+                <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755795846/imageedit_1_9530648970_umg657.png" alt="Logo" class="w-10 h-10 rounded-full">
+                <span class="text-xl sm:text-2xl font-bold">La Cumaca</span>
+            </a>
 
-            <nav class="hidden md:flex space-x-6">
-                <a href="#inicio" class="text-lg font-semibold hover:text-white transition duration-300">Inicio</a>
-                <a href="#productos" class="text-lg font-semibold hover:text-white transition duration-300">Productos</a>
-                <a href="#sobre-nosotros" class="text-lg font-semibold hover:text-white transition duration-300">Sobre Nosotros</a>
-                <a href="#contacto" class="text-lg font-semibold hover:text-white transition duration-300">Contacto</a>
-                <a href="#generador-de-ingresos" class="text-lg font-semibold hover:text-white transition duration-300">Generador de Ingresos</a>
-                <a href="#qr-code" class="text-lg font-semibold hover:text-white transition duration-300">Código QR</a>
-            </nav>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#inicio" class="text-lg font-semibold hover:text-white transition duration-300">Inicio</a>
+                <a href="#productos" class="text-lg font-semibold hover:text-white transition duration-300">Productos</a>
+                <a href="#sobre-nosotros" class="text-lg font-semibold hover:text-white transition duration-300">Sobre Nosotros</a>
+                <a href="#contacto" class="text-lg font-semibold hover:text-white transition duration-300">Contacto</a>
+                <a href="#generador-de-ingresos" class="text-lg font-semibold hover:text-white transition duration-300">Generador de Ingresos</a>
+                <a href="#qr-code" class="text-lg font-semibold hover:text-white transition duration-300">Código QR</a>
+            </nav>
 
-            <div class="md:hidden">
-                <button id="mobile-menu-btn" class="text-yellow-400 focus:outline-none">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
-        </div>
-        <div id="mobile-menu" class="mobile-menu md:hidden bg-gray-900 shadow-lg transition-all duration-300 ease-in-out">
-            <nav class="py-4 px-6 space-y-2">
-                <a href="#inicio" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Inicio</a>
-                <a href="#productos" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Productos</a>
-                <a href="#sobre-nosotros" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Sobre Nosotros</a>
-                <a href="#contacto" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Contacto</a>
-                <a href="tel:+584124502150" class="block text-lg font-semibold text-black bg-yellow-400 hover:bg-yellow-500 p-2 rounded-full text-center mt-4">¡Haz tu Pedido!</a>
-            </nav>
-        </div>
-    </header>
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-yellow-400 focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="mobile-menu md:hidden bg-gray-900 shadow-lg transition-all duration-300 ease-in-out">
+            <nav class="py-4 px-6 space-y-2">
+                <a href="#inicio" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Inicio</a>
+                <a href="#productos" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Productos</a>
+                <a href="#sobre-nosotros" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Sobre Nosotros</a>
+                <a href="#contacto" class="block text-lg font-semibold text-yellow-400 hover:bg-gray-800 p-2 rounded-md">Contacto</a>
+                <a href="tel:+584124502150" class="block text-lg font-semibold text-black bg-yellow-400 hover:bg-yellow-500 p-2 rounded-full text-center mt-4">¡Haz tu Pedido!</a>
+            </nav>
+        </div>
+    </header>
 
-    <main id="inicio" class="pt-24 bg-black text-yellow-400 min-h-screen flex flex-col items-center justify-center">
-        <div class="container mx-auto p-8 text-center">
-            <div class="mb-4">
-                <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755808356/a1_g27_TITULO_zfqybs.png" 
-                     alt="Productos de Limpieza La Cumaca" 
-                     class="w-auto max-w-xs sm:max-w-md md:max-w-xl mx-auto">
-            </div>
+    <main id="inicio" class="pt-24 bg-black text-yellow-400 min-h-screen flex flex-col items-center justify-center">
+        <div class="container mx-auto p-8 text-center">
+            <div class="mb-4">
+                <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755808356/a1_g27_TITULO_zfqybs.png" 
+                     alt="Productos de Limpieza La Cumaca" 
+                     class="w-auto max-w-xs sm:max-w-md md:max-w-xl mx-auto">
+            </div>
 
-            <p class="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-400 mt-1">
-                La Cumaca
-            </p>
+            <p class="text-3xl sm:text-4xl md:text-5xl font-bold text-yellow-400 mt-1">
+                La Cumaca
+            </p>
 
-            <h2 class="text-xl sm:text-2xl md:text-3xl font-normal mb-8 animate-pulse">
-                ¡Expertos en Limpieza para tu hogar y negocio!
-            </h2>
-            <p class="text-lg sm:text-xl md:text-2xl font-light mb-8">
-                Ofrecemos productos de calidad al mayor y detal. ¡Precio Económico y cordial Atención!
-            </p>
-            <a href="#productos" class="bg-yellow-400 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300">
-                Descubre nuestros productos
-            </a>
-        </div>
-    </main>
+            <h2 class="text-xl sm:text-2xl md:text-3xl font-normal mb-8 animate-pulse">
+                ¡Expertos en Limpieza para tu hogar y negocio!
+            </h2>
+            <p class="text-lg sm:text-xl md:text-2xl font-light mb-8">
+                Ofrecemos productos de calidad al mayor y detal. ¡Precio Económico y cordial Atención!
+            </p>
+            <a href="#productos" class="bg-yellow-400 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300">
+                Descubre nuestros productos
+            </a>
+        </div>
+    </main>
 
-    <section id="productos" class="py-16 bg-black">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">Nuestros Productos</h2>
-            <p class="text-lg text-yellow-400 mb-12">Ofrecemos productos de limpieza de alta calidad, disponibles al mayor y detal. Perfectos para tu hogar o negocio.</p>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex justify-center mb-4">
-                        <i class="fas fa-viruses text-5xl text-yellow-400"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Desinfectantes</h3>
-                    <p class="text-gray-400">Elimina gérmenes y bacterias para un ambiente seguro y saludable.</p>
-                </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex justify-center mb-4">
-                        <i class="fas fa-spray-can text-5xl text-yellow-400"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Desengrasantes</h3>
-                    <p class="text-gray-400">Poderosa fórmula para remover la grasa más difícil de cocinas y superficies.</p>
-                </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex justify-center mb-4">
-                        <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755800965/imageedit_3_5211239831_yqqaof.png" alt="Botella de Cloro" class="w-13 h-13 text-5xl text-yellow-400">
-                    </div>
-                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Cloro</h3>
-                    <p class="text-gray-400">Blanqueador y desinfectante ideal para una limpieza profunda y efectiva.</p>
-                </div>
-                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
-                    <div class="flex justify-center mb-4">
-                        <i class="fas fa-bottle-droplet text-5xl text-yellow-400"></i>
-                    </div>
-                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Artículos de Limpieza Genéricos para la limpieza efectiva de su casa y negocio!</h3>
-                    <p class="text-gray-400">Todo lo que necesitas para la limpieza en general en un solo lugar.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="productos" class="py-16 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">Nuestros Productos</h2>
+            <p class="text-lg text-yellow-400 mb-12">Ofrecemos productos de limpieza de alta calidad, disponibles al mayor y detal. Perfectos para tu hogar o negocio.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-viruses text-5xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Desinfectantes</h3>
+                    <p class="text-gray-400">Elimina gérmenes y bacterias para un ambiente seguro y saludable.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-spray-can text-5xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Desengrasantes</h3>
+                    <p class="text-gray-400">Poderosa fórmula para remover la grasa más difícil de cocinas y superficies.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755800965/imageedit_3_5211239831_yqqaof.png" alt="Botella de Cloro" class="w-13 h-13 text-5xl text-yellow-400">
+                    </div>
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Cloro</h3>
+                    <p class="text-gray-400">Blanqueador y desinfectante ideal para una limpieza profunda y efectiva.</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg shadow-md hover:shadow-xl transition duration-300">
+                    <div class="flex justify-center mb-4">
+                        <i class="fas fa-bottle-droplet text-5xl text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-yellow-400 mb-2">Artículos de Limpieza Genéricos para la limpieza efectiva de su casa y negocio!</h3>
+                    <p class="text-gray-400">Todo lo que necesitas para la limpieza en general en un solo lugar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section id="sobre-nosotros" class="py-16 bg-gray-900">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">Sobre Nosotros</h2>
-            <div class="max-w-3xl mx-auto">
-                <p class="text-lg text-yellow-400 mb-6">
-                    Productos de Limpieza La Cumaca nació de la necesidad de ofrecer soluciones de limpieza de alta calidad y a precios accesibles para la comunidad.
-                    Nuestra misión es proveer productos que te ayuden a mantener tu hogar limpio, seguro y saludable, con la comodidad de comprarlos al mayor o detal.
-                </p>
-                <p class="text-lg text-yellow-400">
-                    Estamos comprometidos con la satisfacción del cliente y la calidad de nuestros productos.
-                </p>
-                <div class="flex justify-center mt-8">
-                    <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755795846/imageedit_1_9530648970_umg657.png" alt="Logo La Cumaca" class="w-auto h-60">
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="sobre-nosotros" class="py-16 bg-gray-900">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">Sobre Nosotros</h2>
+            <div class="max-w-3xl mx-auto">
+                <p class="text-lg text-yellow-400 mb-6">
+                    Productos de Limpieza La Cumaca nació de la necesidad de ofrecer soluciones de limpieza de alta calidad y a precios accesibles para la comunidad.
+                    Nuestra misión es proveer productos que te ayuden a mantener tu hogar limpio, seguro y saludable, con la comodidad de comprarlos al mayor o detal.
+                </p>
+                <p class="text-lg text-yellow-400">
+                    Estamos comprometidos con la satisfacción del cliente y la calidad de nuestros productos.
+                </p>
+                <div class="flex justify-center mt-8">
+                    <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755795846/imageedit_1_9530648970_umg657.png" alt="Logo La Cumaca" class="w-auto h-60">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section id="contacto" class="py-16 bg-black">
-        <div class="container mx-auto px-4 text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">Contáctanos</h2>
-            <p class="text-lg text-yellow-400 mb-8">¿Listo para hacer tu pedido o tienes alguna pregunta? Estamos aquí para Servirte.</p>
-            <div class="max-w-2xl mx-auto space-y-6">
-                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
-                    <a href="tel:+584124502150" class="inline-block bg-yellow-400 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-500 transition duration-300">
-                        📞 Llamar
-                    </a>
-                    <a href="https://wa.me/584124502150" target="_blank" class="inline-block bg-green-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
-                        💬 WhatsApp
-                    </a>
-                </div>
-                <div class="space-y-4">
-                    <div class="flex items-center justify-center space-x-4">
-                        <i class="fas fa-envelope text-2xl text-yellow-400"></i>
-                        <span class="text-lg text-gray-400">lacumaca.limpieza@email.com</span>
-                    </div>
-                    <div class="flex items-center justify-center space-x-4">
-                        <i class="fas fa-map-marker-alt text-2xl text-yellow-400"></i>
-                        <span class="text-lg text-gray-400">Av. Principal La Cumaca, San Diego, Venezuela</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <section id="contacto" class="py-16 bg-black">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-yellow-400 mb-8">Contáctanos</h2>
+            <p class="text-lg text-yellow-400 mb-8">¿Listo para hacer tu pedido o tienes alguna pregunta? Estamos aquí para Servirte.</p>
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="tel:+584124502150" class="inline-block bg-yellow-400 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:bg-yellow-500 transition duration-300">
+                        📞 Llamar
+                    </a>
+                    <a href="https://wa.me/584124502150" target="_blank" class="inline-block bg-green-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-600 transition duration-300">
+                        💬 WhatsApp
+                    </a>
+                </div>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-center space-x-4">
+                        <i class="fas fa-envelope text-2xl text-yellow-400"></i>
+                        <span class="text-lg text-gray-400">lacumaca.limpieza@email.com</span>
+                    </div>
+                    <div class="flex items-center justify-center space-x-4">
+                        <i class="fas fa-map-marker-alt text-2xl text-yellow-400"></i>
+                        <span class="text-lg text-gray-400">Av. Principal La Cumaca, San Diego, Venezuela</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <section id="generador-de-ingresos" class="py-16 bg-gray-900 text-center text-yellow-400">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-                Generador de Ingresos
-            </h2>
-            <div class="flex justify-center mb-8">
-                <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755564408/P-6_w7edxu.png"
-                     alt="Emprende World"
-                     class="w-auto max-w-sm sm:max-w-md md:max-w-lg mx-auto rounded-lg shadow-lg">
-            </div>
-            <p class="text-lg sm:text-xl md:text-2xl font-light">
-                Descubre cómo ganar dinero en línea con el marketing de afiliados y aprovecha las oportunidades para crecer.
-            </p>
-            
-            <!-- COMIENZO DE LA SECCIÓN DE PREGUNTAS FRECUENTES -->
-            <div class="max-w-4xl mx-auto p-8 rounded-xl my-8">
-                <h3 class="text-3xl font-bold text-yellow-400 mb-6">Preguntas Frecuentes</h3>
-                
-                <!-- Contenedor donde se colocarán los botones de las preguntas -->
-                <div id="faq-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-                    <!-- Los botones se generarán aquí con JavaScript -->
-                </div>
+    <section id="generador-de-ingresos" class="py-16 bg-gray-900 text-center text-yellow-400">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+                Generador de Ingresos
+            </h2>
+            <div class="flex justify-center mb-8">
+                <img src="https://res.cloudinary.com/dysydffc7/image/upload/v1755564408/P-6_w7edxu.png"
+                     alt="Emprende World"
+                     class="w-auto max-w-sm sm:max-w-md md:max-w-lg mx-auto rounded-lg shadow-lg">
+            </div>
+            <p class="text-lg sm:text-xl md:text-2xl font-light">
+                Descubre cómo ganar dinero en línea con el marketing de afiliados y aprovecha las oportunidades para crecer.
+            </p>
+            
+            <!-- COMIENZO DE LA SECCIÓN DE PREGUNTAS FRECUENTES -->
+            <div class="max-w-4xl mx-auto p-8 rounded-xl my-8">
+                <h3 class="text-3xl font-bold text-yellow-400 mb-6">Preguntas Frecuentes</h3>
+                
+                <!-- Contenedor donde se colocarán los botones de las preguntas -->
+                <div id="faq-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
+                    <!-- Los botones se generarán aquí con JavaScript -->
+                </div>
 
-                <!-- Contenedor donde se mostrarán las respuestas -->
-                <div id="faq-answer" class="bg-gray-800 p-6 rounded-lg border-l-4 border-yellow-400 text-left text-gray-200">
-                    <h4 class="text-xl font-semibold mb-4 text-yellow-400">Respuesta</h4>
-                    <p>Haz clic en una pregunta para ver la respuesta.</p>
-                </div>
-            </div>
-            <!-- FIN DE LA SECCIÓN DE PREGUNTAS FRECUENTES -->
+                <!-- Contenedor donde se mostrarán las respuestas -->
+                <div id="faq-answer" class="bg-gray-800 p-6 rounded-lg border-l-4 border-yellow-400 text-left text-gray-200">
+                    <h4 class="text-xl font-semibold mb-4 text-yellow-400">Respuesta</h4>
+                    <p>Haz clic en una pregunta para ver la respuesta.</p>
+                </div>
+            </div>
+            <!-- FIN DE LA SECCIÓN DE PREGUNTAS FRECUENTES -->
 
-            <!-- SECCIÓN RESTAURADA: ENLACE DE REGISTRO DE EMPRENDE WORLD -->
-            <div class="flex justify-center mt-4 space-x-4">
-                <a href="https://www.emprendeworld.com/websignup?ref=81322593" 
-                   class="bg-yellow-400 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 inline-block"
-                   target="_blank">
-                    ¡Registrarse ahora!
-                </a>
-            </div>
-        </div>
-    </section>
+            <!-- SECCIÓN RESTAURADA: ENLACE DE REGISTRO DE EMPRENDE WORLD -->
+            <div class="flex justify-center mt-4 space-x-4">
+                <a href="https://www.emprendeworld.com/websignup?ref=81322593" 
+                   class="bg-yellow-400 text-black font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-200 transition duration-300 inline-block"
+                   target="_blank">
+                    ¡Registrarse ahora!
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <section id="qr-code" class="py-16 bg-black text-center text-yellow-400">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
-                Código QR de la página
-            </h2>
-            <div class="flex justify-center mb-8">
-                <img src="https://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=FFFFFF&data=productosdelimpiezalacumaca.netlify.app&qzone=1&margin=0&size=200x200&ecc=L" 
-                     alt="Código QR de la página web" 
-                     class="w-auto mx-auto rounded-lg shadow-lg">
-            </div>
-            <p class="text-lg sm:text-xl md:text-2xl font-light">
-                Escanea para visitar nuestra página web:
-            </p>
-            <p class="text-lg sm:text-xl md:text-2xl font-bold mt-2">
-                productosdelimpiezalacumaca.netlify.app
-            </p>
-        </div>
-    </section>
+    <section id="qr-code" class="py-16 bg-black text-center text-yellow-400">
+        <div class="container mx-auto px-4">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">
+                Código QR de la página
+            </h2>
+            <div class="flex justify-center mb-8">
+                <!-- LÍNEA CORREGIDA -->
+                <img src="https://api.qrserver.com/v1/create-qr-code/?color=000000&bgcolor=fcd34d&data=https://productosdelimpiezalacumaca.netlify.app&qzone=1&margin=0&size=200x200&ecc=L" 
+                     alt="Código QR de la página web" 
+                     class="w-auto mx-auto rounded-lg shadow-lg">
+            </div>
+            <p class="text-lg sm:text-xl md:text-2xl font-light">
+                Escanea para visitar nuestra página web:
+            </p>
+            <p class="text-lg sm:text-xl md:text-2xl font-bold mt-2">
+                productosdelimpiezalacumaca.netlify.app
+            </p>
+        </div>
+    </section>
 
-    <!-- SECCIÓN RESTAURADA: PIE DE PÁGINA -->
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
-        <div class="container mx-auto px-4">
-            <div class="mb-4">
-                <p class="text-lg font-bold mb-2">Productos de Limpieza La Cumaca</p>
-                <p class="text-sm">¡Tu socio de confianza para un hogar y negocio limpios y saludables!</p>
-            </div>
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="https://wa.me/584124502150" target="_blank" class="text-gray-400 hover:text-green-500 transition duration-300">
-                    <i class="fab fa-whatsapp text-3xl"></i>
-                </a>
-                <a href="#" target="_blank" class="text-gray-400 hover:text-pink-500 transition duration-300">
-                    <i class="fab fa-instagram text-3xl"></i>
-                </a>
-                <a href="#" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300">
-                    <i class="fab fa-facebook-f text-3xl"></i>
-                </a>
-            </div>
-            <p class="mt-8 text-sm">&copy; 2025 Productos de Limpieza La Cumaca. Todos los derechos reservados. Diseño: EBS Making</p>
-        </div>
-    </footer>
+    <!-- SECCIÓN RESTAURADA: PIE DE PÁGINA -->
+    <footer class="bg-gray-900 text-gray-400 py-8 text-center">
+        <div class="container mx-auto px-4">
+            <div class="mb-4">
+                <p class="text-lg font-bold mb-2">Productos de Limpieza La Cumaca</p>
+                <p class="text-sm">¡Tu socio de confianza para un hogar y negocio limpios y saludables!</p>
+            </div>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://wa.me/584124502150" target="_blank" class="text-gray-400 hover:text-green-500 transition duration-300">
+                    <i class="fab fa-whatsapp text-3xl"></i>
+                </a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-pink-500 transition duration-300">
+                    <i class="fab fa-instagram text-3xl"></i>
+                </a>
+                <a href="#" target="_blank" class="text-gray-400 hover:text-blue-500 transition duration-300">
+                    <i class="fab fa-facebook-f text-3xl"></i>
+                </a>
+            </div>
+            <p class="mt-8 text-sm">&copy; 2025 Productos de Limpieza La Cumaca. Todos los derechos reservados. Diseño: EBS Making</p>
+            
+        </div>
+    </footer>
 
-    <!-- TODOS LOS SCRIPTS ESTÁN AQUÍ ABAJO, JUNTOS -->
-    <script>
-        // Código para el menú móvil
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
+    <!-- TODOS LOS SCRIPTS ESTÁN AQUÍ ABAJO, JUNTOS -->
+    <script>
+        // Código para el menú móvil
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-        });
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
 
-        // Código para el agente de preguntas frecuentes
-        const base_de_conocimiento = {
-            "de donde es la empresa": "Emprende World no es una empresa, es una plataforma de publicidad creada en 2008, actualmente es administrado por Web Fantástica, comunidad de emprendedores cuya sede de operaciones se encuentra en Oaxaca, México.",
-            "que es emprende world": "Emprende World es un acrónimo en donde se combinan dos palabras de diferente lenguaje para describir a quienes lo conforman. Su significado es: 'Emprendedores del mundo'. Emprende World es el nombre que identifica a nuestra plataforma de publicidad, la cual se constituye como el mejor medio para que cualquier emprendedor pueda obtener desarrollo económico de una manera sencilla. Nuestra plataforma está abierta a la participación de todo el mundo y en ella se pueden promover todo tipo de negocios siempre y cuando estos sean legales. La publicidad es administrada en la propia plataforma por sus propietarios.",
-            "cuantas personas tengo que referir para participar": "Entre más personas refiera mayores serán sus ganancias. Debe tener en cuenta que usted recibe como bonificación el 100% del importe pagado por el paquete EW-1 de cada uno de sus referidos directos, independientemente de la posición que ocupen en su red.",
-            "cuantas cuentas puedo tener": "Usted puede tener las cuentas que desee, siempre y cuando cada cuenta tenga una cuenta de correo electrónico diferente a las demás, una cuenta bancaria y una cuenta de usuario también diferentes a las demás.",
-            "soy menor de edad puedo participar": "La edad mínima para participar en el programa es de 18 años.",
-            "cuanto tiempo tengo para activar mi cuenta": "Como usuario sin pago, usted permanecerá sólo 15 días dentro de la lista de invitados de su patrocinador. Si en ese periodo no activa su cuenta será eliminado del sistema.",
-            "quiero ayuda personalizada": "Puede comunicarse con el área de soporte técnico ingresando desde la sección Ayuda > Soporte dentro de su Oficina Virtual.",
-            "cuanto cuesta la inscripcion": "En el programa no se paga inscripción. Para activar su cuenta sólo debe adquirir el primer paquete de publicidad que cuesta $2.00 dólares.",
-            "cual es el medio de pago que puedo usar": "De preferencia recomendamos utilizar USDT o USDC en todas las transacciones. Con esta moneda virtual las transacciones son de muy bajo costo o casi nulo, incluso en algunos casos los pagos se envían en forma gratuita. En la red existe un gran número de tutoriales sobre el envío de USDT o USDC, le recomendamos que los lea. Si por alguna razón usted no desea enviar sus pagos en USDT o USDC, puede utilizar LTC, ETH, BCH o BTC en su envío. Si reside en México puede hacer sus envíos en pesos mexicanos utilizando cualquier banco del Sistema Bancario Mexicano.",
-            "cuantos paquetes de publicidad manejan": "El programa tiene 7 paquetes diferentes de acuerdo al nivel de cobro de bonificaciones que usted desee tener. Independientemente de esto, se ingresa al programa realizando la compra del paquete de menor costo. El costo de cada paquete es el siguiente: EW-1 = $2.00 dólares, EW-2 = $4.00 dólares, EW-3 = $16.00 dólares, EW-4 = $32.00 dólares, EW-5 = $64.00 dólares, EW-6 = $90.00 dólares, EW-7 = $120.00 dólares.",
-            "puedo saltarme un paquete": "No. Para llevar un orden en los pagos que usted recibirá por concepto de las compras de publicidad de sus referidos es necesario conservar el orden establecido en el Plan de Compensaciones.",
-            "puedo pagar paquetes superiores con ganancias": "Sí. Usted puede hacer pagos con cargo a su saldo.",
-            "recibire todos los pagos de mi red": "No. Usted recibirá como bonificación las compras del paquete EW-1 únicamente de sus referidos directos, independientemente de la ubicación que tengan éstos en su red. Para los paquetes EW-2 a EW-7, recibirá bonificaciones solo de los usuarios ubicados en el mismo nivel que el paquete en su red.",
-            "cuanto puedo ganar": "Todo depende del esfuerzo que usted ponga en sus actividades de prospectación, en combinación con el esfuerzo de todos los que están por encima y por debajo de usted en la red general de invitados. Trabajando en equipo se obtienen los mejores resultados.",
-            "cuantas formas de ganar dinero tengo": "Emprende World ofrece dos tipos de ingresos: 1. Ingreso por concepto de cuenta activada de cada referido directo. 2. Ingreso por concepto de la adquisición de paquetes superiores de publicidad (EW-2 a EW-7) de todos los que conforman su red de invitados, la cantidad de ingresos depende de la posición que estos tengan en su red.",
-            "en que consiste el ingreso por cuenta activada": "Si usted promueve nuestro programa y gracias a esa promoción alguien activa su cuenta adquiriendo el primer paquete de publicidad, usted cobrará el 100% del importe pagado por su referido.",
-            "en que consiste el ingreso por paquetes superiores": "En nuestro programa se comercializan 7 paquetes diferentes de publicidad. La adquisición del primer paquete permite activar la cuenta del usuario. Los 6 paquetes restantes se denominan paquetes superiores o subsecuentes y el importe pagado por los usuarios en su adquisición será adjudicado a usted dependiendo de la posición que tenga el comprador en su red de invitados. Para mayores detalles consultar la sección Cómo funciona de nuestro sitio web.",
-            "cual es el monto minimo de retiro": "El monto mínimo de retiro es de $16.00 dólares.",
-            "por que no me devuelven el dinero": "Los pagos NO SON REEMBOLSABLES. Recuerde que los pagos son canalizados a la cuenta del patrocinador o del upline correspondiente, por lo tanto no podemos devolver algo que ya no tenemos.",
-            "donde veo mi publicidad": "La publicidad se muestra en cada sección de nuestro sitio en internet y en las Oficina Virtuales de nuestros usuarios."
-        };
-        
-        const faqContainer = document.getElementById('faq-container');
-        const faqAnswerContainer = document.getElementById('faq-answer');
+        // Código para el agente de preguntas frecuentes
+        const base_de_conocimiento = {
+            "de donde es la empresa": "Emprende World no es una empresa, es una plataforma de publicidad creada en 2008, actualmente es administrado por Web Fantástica, comunidad de emprendedores cuya sede de operaciones se encuentra en Oaxaca, México.",
+            "que es emprende world": "Emprende World es un acrónimo en donde se combinan dos palabras de diferente lenguaje para describir a quienes lo conforman. Su significado es: 'Emprendedores del mundo'. Emprende World es el nombre que identifica a nuestra plataforma de publicidad, la cual se constituye como el mejor medio para que cualquier emprendedor pueda obtener desarrollo económico de una manera sencilla. Nuestra plataforma está abierta a la participación de todo el mundo y en ella se pueden promover todo tipo de negocios siempre y cuando estos sean legales. La publicidad es administrada en la propia plataforma por sus propietarios.",
+            "cuantas personas tengo que referir para participar": "Entre más personas refiera mayores serán sus ganancias. Debe tener en cuenta que usted recibe como bonificación el 100% del importe pagado por el paquete EW-1 de cada uno de sus referidos directos, independientemente de la posición que ocupen en su red.",
+            "cuantas cuentas puedo tener": "Usted puede tener las cuentas que desee, siempre y cuando cada cuenta tenga una cuenta de correo electrónico diferente a las demás, una cuenta bancaria y una cuenta de usuario también diferentes a las demás.",
+            "soy menor de edad puedo participar": "La edad mínima para participar en el programa es de 18 años.",
+            "cuanto tiempo tengo para activar mi cuenta": "Como usuario sin pago, usted permanecerá sólo 15 días dentro de la lista de invitados de su patrocinador. Si en ese periodo no activa su cuenta será eliminado del sistema.",
+            "quiero ayuda personalizada": "Puede comunicarse con el área de soporte técnico ingresando desde la sección Ayuda > Soporte dentro de su Oficina Virtual.",
+            "cuanto cuesta la inscripcion": "En el programa no se paga inscripción. Para activar su cuenta sólo debe adquirir el primer paquete de publicidad que cuesta $2.00 dólares.",
+            "cual es el medio de pago que puedo usar": "De preferencia recomendamos utilizar USDT o USDC en todas las transacciones. Con esta moneda virtual las transacciones son de muy bajo costo o casi nulo, incluso en algunos casos los pagos se envían en forma gratuita. En la red existe un gran número de tutoriales sobre el envío de USDT o USDC, le recomendamos que los lea. Si por alguna razón usted no desea enviar sus pagos en USDT o USDC, puede utilizar LTC, ETH, BCH o BTC en su envío. Si reside en México puede hacer sus envíos en pesos mexicanos utilizando cualquier banco del Sistema Bancario Mexicano.",
+            "cuantos paquetes de publicidad manejan": "El programa tiene 7 paquetes diferentes de acuerdo al nivel de cobro de bonificaciones que usted desee tener. Independientemente de esto, se ingresa al programa realizando la compra del paquete de menor costo. El costo de cada paquete es el siguiente: EW-1 = $2.00 dólares, EW-2 = $4.00 dólares, EW-3 = $16.00 dólares, EW-4 = $32.00 dólares, EW-5 = $64.00 dólares, EW-6 = $90.00 dólares, EW-7 = $120.00 dólares.",
+            "puedo saltarme un paquete": "No. Para llevar un orden en los pagos que usted recibirá por concepto de las compras de publicidad de sus referidos es necesario conservar el orden establecido en el Plan de Compensaciones.",
+            "puedo pagar paquetes superiores con ganancias": "Sí. Usted puede hacer pagos con cargo a su saldo.",
+            "recibire todos los pagos de mi red": "No. Usted recibirá como bonificación las compras del paquete EW-1 únicamente de sus referidos directos, independientemente de la ubicación que tengan éstos en su red. Para los paquetes EW-2 a EW-7, recibirá bonificaciones solo de los usuarios ubicados en el mismo nivel que el paquete en su red.",
+            "cuanto puedo ganar": "Todo depende del esfuerzo que usted ponga en sus actividades de prospectación, en combinación con el esfuerzo de todos los que están por encima y por debajo de usted en la red general de invitados. Trabajando en equipo se obtienen los mejores resultados.",
+            "cuantas formas de ganar dinero tengo": "Emprende World ofrece dos tipos de ingresos: 1. Ingreso por concepto de cuenta activada de cada referido directo. 2. Ingreso por concepto de la adquisición de paquetes superiores de publicidad (EW-2 a EW-7) de todos los que conforman su red de invitados, la cantidad de ingresos depende de la posición que estos tengan en su red.",
+            "en que consiste el ingreso por cuenta activada": "Si usted promueve nuestro programa y gracias a esa promoción alguien activa su cuenta adquiriendo el primer paquete de publicidad, usted cobrará el 100% del importe pagado por su referido.",
+            "en que consiste el ingreso por paquetes superiores": "En nuestro programa se comercializan 7 paquetes diferentes de publicidad. La adquisición del primer paquete permite activar la cuenta del usuario. Los 6 paquetes restantes se denominan paquetes superiores o subsecuentes y el importe pagado por los usuarios en su adquisición será adjudicado a usted dependiendo de la posición que tenga el comprador en su red de invitados. Para mayores detalles consultar la sección Cómo funciona de nuestro sitio web.",
+            "cual es el monto minimo de retiro": "El monto mínimo de retiro es de $16.00 dólares.",
+            "por que no me devuelven el dinero": "Los pagos NO SON REEMBOLSABLES. Recuerde que los pagos son canalizados a la cuenta del patrocinador o del upline correspondiente, por lo tanto no podemos devolver algo que ya no tenemos.",
+            "donde veo mi publicidad": "La publicidad se muestra en cada sección de nuestro sitio en internet y en las Oficina Virtuales de nuestros usuarios."
+        };
+        
+        const faqContainer = document.getElementById('faq-container');
+        const faqAnswerContainer = document.getElementById('faq-answer');
 
-        for (const pregunta in base_de_conocimiento) {
-            const boton = document.createElement('button');
-            boton.textContent = pregunta.charAt(0).toUpperCase() + pregunta.slice(1) + '?';
-            
-            // Usando clases de Tailwind para un diseño responsivo.
-            boton.className = 'w-full text-left bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-md';
+        for (const pregunta in base_de_conocimiento) {
+            const boton = document.createElement('button');
+            boton.textContent = pregunta.charAt(0).toUpperCase() + pregunta.slice(1) + '?';
+            
+            // Usando clases de Tailwind para un diseño responsivo.
+            boton.className = 'w-full text-left bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-3 px-6 rounded-lg transition duration-300 transform hover:scale-105 shadow-md';
 
-            boton.addEventListener('click', () => {
-                const respuesta = base_de_conocimiento[pregunta];
+            boton.addEventListener('click', () => {
+                const respuesta = base_de_conocimiento[pregunta];
 
-                // Limpiando el contenido anterior para mostrar solo la nueva respuesta
-                faqAnswerContainer.innerHTML = '';
-                
-                const nuevaRespuesta = document.createElement('div');
-                nuevaRespuesta.innerHTML = `<h4 class="text-xl font-bold text-yellow-400 mb-2">${pregunta.charAt(0).toUpperCase() + pregunta.slice(1)}?</h4><p class="text-gray-200">${respuesta}</p>`;
+                // Limpiando el contenido anterior para mostrar solo la nueva respuesta
+                faqAnswerContainer.innerHTML = '';
+                
+                const nuevaRespuesta = document.createElement('div');
+                nuevaRespuesta.innerHTML = `<h4 class="text-xl font-bold text-yellow-400 mb-2">${pregunta.charAt(0).toUpperCase() + pregunta.slice(1)}?</h4><p class="text-gray-200">${respuesta}</p>`;
 
-                faqAnswerContainer.appendChild(nuevaRespuesta);
-            });
+                faqAnswerContainer.appendChild(nuevaRespuesta);
+            });
 
-            faqContainer.appendChild(boton);
-        }
-    </script>
+            faqContainer.appendChild(boton);
+        }
+    </script>
 </body>
 </html>
